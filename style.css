@@ -1,0 +1,35 @@
+﻿/* Grundgestaltung */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #202b25; background: #f3f6f3; line-height: 1.6; }
+.container { width: min(1100px, 92%); margin: auto; }
+header { background: #183e2d; color: white; padding: 36px 0; }
+h1 { margin: 8px 0; font-size: 40px; }
+header p { margin: 0; color: #d7e8db; }
+.badge { color: #d1ef93; font-size: 12px; letter-spacing: 2px; }
+main { padding: 24px 0; }
+h2 { margin: 0 0 16px; }
+/* Suche und Filter */
+.filters { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.filters > label:first-child { flex: 1; min-width: 220px; }
+label { display: block; font-weight: bold; }
+input[type="search"], textarea { display: block; width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #93a599; border-radius: 6px; font: inherit; background: white; color: #202b25; }
+.checkbox { display: flex; gap: 8px; align-items: center; }
+input[type="checkbox"] { width: 18px; height: 18px; }
+#count, footer { color: #526359; }
+#message:empty { display: none; }
+#message { padding: 12px; background: #fff2cd; border-radius: 6px; }
+/* Teamkarten */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.team-card { background: white; padding: 22px; border: 1px solid #d5ded6; border-radius: 10px; }
+.team-card h3 { margin: 12px 0 4px; font-size: 19px; }
+.team-card p { margin: 4px 0 16px; }
+.team-code { display: inline-block; padding: 4px 10px; border-radius: 5px; color: white; background: #183e2d; font-weight: bold; }
+button { padding: 9px 13px; border: 1px solid #245638; border-radius: 6px; font: inherit; cursor: pointer; color: #245638; background: white; }
+button:hover { background: #edf5e9; }
+button[aria-pressed="true"], button[type="submit"] { background: #245638; color: white; }
+:focus-visible { outline: 3px solid #b56800; outline-offset: 3px; }
+form { margin-top: 18px; border-top: 1px solid #e0e6e0; padding-top: 14px; }
+textarea { resize: vertical; min-height: 85px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+footer { padding: 24px 0 36px; border-top: 1px solid #d5ded6; font-size: 14px; }
+@media (max-width: 400px) { .team-grid { grid-template-columns: 1fr; } }

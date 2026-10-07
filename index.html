@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NBA Hub – Schulprojekt</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="teams.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><div class="container"><span class="badge">SCHULPROJEKT</span><h1>NBA Hub</h1><p>Teams entdecken. Favoriten merken. Notizen sammeln.</p></div></header>
+  <main class="container">
+    <section aria-labelledby="teams-heading">
+      <h2 id="teams-heading">NBA-Teams</h2>
+      <div class="filters">
+        <label for="search">Team oder Stadt suchen<input id="search" type="search" placeholder="Zum Beispiel Chicago" autocomplete="off"></label>
+        <label class="checkbox"><input id="favorites-only" type="checkbox"> Nur Favoriten</label>
+      </div>
+      <p id="count" role="status"></p>
+      <p id="message" role="status"></p>
+      <div id="teams" class="team-grid"></div>
+      <noscript>Bitte aktiviere JavaScript, um die Teams anzuzeigen.</noscript>
+    </section>
+  </main>
+  <footer class="container">Die Teamdaten sind Beispieldaten aus dem ursprünglichen Projekt, keine Live-Daten. Favoriten und Notizen werden nur in diesem Browser gespeichert.</footer>
+</body>
+</html>
